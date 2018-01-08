@@ -1,0 +1,29 @@
+{
+  "name": "electionsystem",
+  "version": "0.0.1",
+  "description": " Blockchain based Fool Proof Election System ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harkrishnamekala/electionsystem.git"
+  },
+  "keywords": [
+    "Election",
+    "Blockchain",
+    "De-Centralized"
+  ],
+  "author": "Harikrishna Mekala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harkrishnamekala/electionsystem/issues"
+  },
+  "homepage": "https://github.com/harkrishnamekala/electionsystem#readme",
+  "dependencies": {
+    "ethereumjs-testrpc": "^6.0.3",
+    "solc": "^0.4.19",
+    "web3": "^1.0.0-beta.27"
+  }
+}
