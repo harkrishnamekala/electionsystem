@@ -1,8 +1,8 @@
-pragma solidity ^0.4.19;
+pragma solidity ^0.4.1;
 
 contract Election {
 
-    struct candidate {
+    struct Candidate {
         address addr;
         bytes32 name;
         bytes32 aadhar;
@@ -12,13 +12,14 @@ contract Election {
     mapping (address => uint256) public votesreceived;
 
     bytes32[] public candidatelist;   
-
+    /* This is the constructor
+    */
     function Election(bytes32[] candidateNames) {
         candidatelist = candidateNames;
     }
 
-    function ValidateCandidate(bytes32 candidate) returns (bool) {
-        for(uint32 i=0;i<candidatelist.length;i++) { 
+    function validateCandidate(bytes32 candidate) returns (bool) {
+        for (uint32 i = 0;i<candidatelist.length;i++) { 
             if (candidatelist[i] == candidate) {
                 return true;
             }
@@ -26,5 +27,5 @@ contract Election {
         }
     }
 
-    function
+    
 }
